@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #0082e6;
+  height: 80px;
+  width: 100%;
+ }
+
+
+ nav ul {
+  text-align: center;
+  margin-right: 40px;
+ }
+ nav li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  
+ }
