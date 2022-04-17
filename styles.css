@@ -178,6 +178,99 @@ main,
   }
   
   }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+    /* Sets the background to red when the body
+  isn't targeted */
+  
+  
+    nav ul li {
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+   
+    }
+  
+    /* #clicked:target .on {display: none !important; background-color: green !important;} */
+    #clicked:target .off {display: none !important; }
+    #clicked:target .on {display: none !important; }
+  
+    /* nav ul li {
+      display: none;
+   
+      } */
+  
+    nav ul li:hover a {
+     padding-left: 20px;
+     
+      }
+  
+      nav ul li a {
+        color: white;
+        text-transform: capitalize;
+        font-size: 20px;
+        display: block;
+        height: 100%;
+        width: 400px;
+        line-height: 65px;
+        box-sizing: border-box;
+  
+  
+        }
+  
+    nav{
+      position: fixed;
+      left: 0;
+      width:100%;
+      height:100%;
+      background: #1b9bff ;
+      user-select: none;
+    }
+  
+    
+    .burgericon {
+      display: inline-block;
+      cursor: pointer;
+      padding-top: 16px;
+      padding-left: 24px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+  
+  }
+  
+  aside{
+    background-color: #ADD8E6;
+  }
+  
   
   
   
